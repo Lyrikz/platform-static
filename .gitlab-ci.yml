@@ -1,0 +1,22 @@
+image: alpine:3
+
+stages:
+  - build
+  - test
+  - deploy
+
+build-static:
+  stage: build
+  script:
+    - echo buildling
+
+test-files:
+  stage: test
+  script:
+    - echo testing
+
+
+deploy-to-s3:
+  stage: deploy
+  script:
+    - echo deploying
